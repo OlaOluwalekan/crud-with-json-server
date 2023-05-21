@@ -1,0 +1,175 @@
+.main {
+  background-color: aliceblue;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.main > div {
+  background-color: white;
+  width: 90%;
+  margin: 20px auto;
+  /* padding: 10px; */
+  box-shadow: 1px 1px 7px grey;
+}
+
+.main > div > section:first-child {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.main > div > section:first-child > span {
+  width: 50px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: blue;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.main > div > section:first-child > img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.main > div > section:first-child > article > p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.main > div > section:first-child > article > p:last-child {
+  font-size: 12px;
+}
+
+.main > div > section:first-child > article > p:last-child > span:first-child {
+  color: blue;
+  font-weight: 600;
+}
+
+.main > div > section:first-child > article > p:last-child > span:last-child {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+}
+
+.main > div > section:last-of-type {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.main > div > section:last-of-type > p:first-child {
+  font-size: 12px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.main > div > section:last-of-type > p:last-child {
+  font-size: 14px;
+  line-height: 20px;
+  color: grey;
+}
+
+.main > div > article {
+  /* background-color: gold; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.main > div > article > :first-child {
+  width: 50%;
+  height: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  color: green;
+  transition: all 300ms ease;
+}
+
+.main > div > article > :last-child {
+  width: 50%;
+  height: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  color: red;
+  transition: all 300ms ease;
+}
+
+.main > div > article > :first-child:hover {
+  background-color: green;
+  color: white;
+}
+
+.main > div > article > :last-child:hover {
+  background-color: red;
+  color: white;
+}
+
+.dialog {
+  position: fixed;
+  width: 100%;
+  height: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #00000077;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog > form {
+  width: 90%;
+  max-width: 500px;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.dialog > form > span {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 30px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.dialog > form > input {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+.dialog > form > textarea {
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.dialog > form > button {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
